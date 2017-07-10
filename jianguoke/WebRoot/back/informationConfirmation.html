@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="css/pintuer.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/informationConfirmation.css">
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="js/jquery.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/pintuer.js"></script>
+<script src="js/orderInfo.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+	<div class="panel admin-panel" style="padding-bottom:100px;">
+		<div class="panel-head">
+			<strong class="icon-reorder"> 订单列表</strong>
+		</div>
+		<div class="padding border-bottom">
+			<ul>
+				<li>
+				<div class="di-handle">
+				<span class="search-state">订单状态：<select id="order-select"><option selected value="">请选择</option><option>全部订单</option><option>已完成订单</option><option>未完成订单</option><option>已取消订单</option></select></span>
+				<span>薪酬筛选:</span><input type="text" placeholder="50" class="min-sal" >&nbsp;~&nbsp;<input type="text" placeholder="100" class="max-sal"><span id ="salary-query"class="btn btn-primary ">搜索</span>
+				<span class="sp-search">
+					<input type="text" id="search-id" placeholder="根据订单号查找"> 
+					<a id="search"></a>
+				</span></div></li>
+			</ul>
+		
+			<table class="table table-hover text-center" id="order-info" style="margin-top:20px;border:1px solid #dddddd;">
+				<tr class="tab-head">
+					<th width="120">序列号</th>
+					<th>订单号</th>
+					<th>招聘信息编号</th>
+					<th>商家编号</th>
+					<th>状态</th>
+					<th width="120">用户账号</th>
+					<th >薪酬</th>
+					<th>开始时间</th>
+					<th>结束时间</th>
+					<th>操作</th>
+				</tr>
+			</table>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align:center;">订单详情</h4>
+      </div>
+      <div class="modal-body">
+        <p class="item"><span>订单编号：</span><span class="order-id">1025</span></p>
+		<p class="item"><span>用户账号:</span><span class="user-phone">18942356824</span></p>
+		<p class="item"><span>订单类型:</span><span class="order-type">家教</span><span>总薪酬:</span><span class="order-salary">100/天</span></p>
+		<p class="item"><span>订单开始时间:</span><span class="order-starttime">2016-12-9 17:59:30</span></p>
+		<p class="item"><span>订单结束时间:</span><span class="order-endtime">2016-12-12 18:50:12</span></p>
+		<p class="item"><span>工作时间:</span><span class="work-time">2016-12-10</span></p>
+		<p class="item"><span>工作地点</span><span class="work-space">12:14</span></p>
+		<p class="item"><span>工作内容</span><span class="work-content">工作具体内容</span></p>
+		<p class="item"><span>发布人：</span><span class="order-publish">12:14</span></p>
+		<p class="item"><span>发布人地址：</span><span class="order-publish-address">12:14</span></p>
+		<p class="item"><span>发布人联系方式：</span><span class="order-publish-phone">12:14</span></p>
+		<span class="state">已完成</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- <div class="mask-layer"></div>
+<div class="pop-up">
+<div class="pop-container">
+<div class="pop-head"><span>订单详情</span><i class="but">x</i></div>
+<div class="pop-content">
+<p><span>订单编号：</span><span class="order-id">1025</span></p>
+<p><span>用户账号:</span><span class="user-phone">18942356824</span></p>
+<p><span>订单类型:</span><span class="order-type">家教</span><span>订单薪酬:</span><span class="order-salary">100/天</span></p>
+<p><span>订单开始时间:</span><span class="order-starttime">2016-12-9 17:59:30</span></p>
+<p><span>订单结束时间:</span><span class="order-endtime">2016-12-12 18:50:12</span></p>
+<p><span>工作时间:</span><span class="work-time">2016-12-10</span></p>
+<p><span>工作地点</span><span class="work-space">12:14</span></p>
+<p><span>发布人：</span><span class="order-publish">12:14</span></p>
+<p><span>发布人地址：</span><span class="order-publish-address">12:14</span></p>
+<p><span>发布人联系方式：</span><span class="order-publish-phone">12:14</span></p>
+</div>
+</div> 
+
+
+</div> -->
+</div>
+</body>
+</html>

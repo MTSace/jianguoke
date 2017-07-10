@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title></title>  
+    <link rel="stylesheet" href="css/pintuer.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/informationConfirmation.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/pintuer.js"></script>  
+</head>
+<body>
+<form method="post" action="">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 留言管理</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+        </li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">ID</th>
+        <th>姓名</th>       
+        <th>电话</th>
+        <th width="25%">内容</th>
+         <th width="120">留言时间</th>
+        <th>操作</th>       
+      </tr>      
+        <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            1</td>
+          <td>王思远</td>
+          <td>15717095429</td>         
+          <td>...(旁白者)</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            1</td>
+          <td>熊宽</td>
+          <td>13420925611</td>       
+          <td>你是智障吗？！！！谢谢！</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            1</td>
+          <td>唐建民</td>
+          <td>13420925611</td>        
+          <td> 哦！对对对！我就是智障！你来咬我呀！妈的智障！</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            1</td>
+          <td>熊涛</td>
+          <td>13420925611</td>         
+          <td>唐建民果然是个智障！哈哈哈！！！</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            1</td>
+          <td>杨雨鑫</td>
+          <td>13420925611</td>         
+          <td>我来...打个酱油，走错地了，你们...继续哈！</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<div class="panel admin-panel" id="panel">
+  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 留言信息</strong></div>
+  <div class="body-content" id="body-content">
+    <form method="post" class="form-x" action="">    
+      <div class="form-group">
+        <div class="label">
+          <label>姓名：</label>
+        </div>
+        <div class="field">
+          <p class="fieldP"></p>
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>电话：</label>
+        </div>
+        <div class="field">
+          <p class="fieldP"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>留言：</label>
+        </div>
+        <div class="confirmationPhoto" id="confirmationPhoto"></div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+
+function del(id){
+	if(confirm("您确定要删除吗?")){
+		
+	}
+}
+
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false; 		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+//点击list进行跳链接
+var tr=document.getElementsByTagName("tr");
+var p=document.getElementsByClassName("fieldP");
+for(i=0;i<tr.length;i++){
+  tr[i].addEventListener("click",function(){
+    p[0].innerHTML=this.getElementsByTagName("td")[1].innerHTML;
+    p[1].innerHTML=this.getElementsByTagName("td")[2].innerHTML;
+    window.location.href='#panel';
+    //  alert(this.getElementsByTagName("td")[1].innerHTML);
+  })
+}
+
+</script>
+</body></html>

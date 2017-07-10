@@ -1,0 +1,15 @@
+.field{
+	width: 50%;
+}
+.body-content{
+	width: 50%;
+	margin: auto;
+}
+#confirmationPhoto{
+	font-size:14px;height:20px;padding:10px;border:solid 1px #ddd; width:85%;line-height:20px;display:block; border-radius:3px; -webkit-appearance:none;float: left;height: 400px;overflow: scroll;
+}
+#panel{
+	margin-top: 10px;
+}
+div .fieldP{
+	font-size:14px;height:20px;padding:10px;width:100%;line-height:20px;display:block; -webkit-appearance:none;padding-top:7px;padding-left:30px;

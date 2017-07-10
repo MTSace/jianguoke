@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Test</display-name>
+	<servlet>
+		<servlet-name>DoJobInfoidQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.DoJobInfoidQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoJobInfoidQuery</servlet-name>
+		<url-pattern>/DoJobInfoidQuery</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Orderservlet</servlet-name>
+		<servlet-class>com.yyx.servlet.Orderservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Orderservlet</servlet-name>
+		<url-pattern>/Orderservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogLet</servlet-name>
+		<servlet-class>com.kuan.servlet.LogLet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogLet</servlet-name>
+		<url-pattern>/LogLet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegLet</servlet-name>
+		<servlet-class></servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>JsonServlet</servlet-name>
+		<servlet-class>com.kuan.servlet.JsonServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>upload</servlet-name>
+		<servlet-class>com.kuan.servlet.upload</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>test</servlet-name>
+		<servlet-class>test</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Uploadhead</servlet-name>
+		<servlet-class>Uploadhead</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadHead</servlet-name>
+		<servlet-class>com.yyx.servlet.UploadHead</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>testsql</servlet-name>
+		<servlet-class>com.yyx.servlet.testsql</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GsonVolleyTest</servlet-name>
+		<servlet-class>com.kuan.servlet.GsonVolleyTest</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>VolleyLoginTest</servlet-name>
+		<servlet-class>com.kuan.servlet.VolleyLoginTest</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doResiger</servlet-name>
+		<servlet-class>com.yyx.servlet.doResiger</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>PushTest</servlet-name>
+		<servlet-class>com.kuan.servlet.PushTest</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doJobTypeQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.doJobTypeQuery</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doJobQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.doJobQuery</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doMicroQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.doMicroQuery</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doActiveQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.doActiveQuery</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doMineMicroQuery</servlet-name>
+		<servlet-class>com.yyx.servlet.doMineMicroQuery</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>doActiveAdd</servlet-name>
+		<servlet-class>com.yyx.servlet.doActiveAdd</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>info_order</servlet-name>
+    <servlet-class>comt.action.info_order</servlet-class>
+  </servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegLet</servlet-name>
+		<url-pattern>/RegLet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JsonServlet</servlet-name>
+		<url-pattern>/JsonServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/servlet/test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Uploadhead</servlet-name>
+		<url-pattern>/Uploadhead</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadHead</servlet-name>
+		<url-pattern>/UploadHead</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>testsql</servlet-name>
+		<url-pattern>/testsql</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GsonVolleyTest</servlet-name>
+		<url-pattern>/GsonVolleyTest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VolleyLoginTest</servlet-name>
+		<url-pattern>/VolleyLoginTest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doResiger</servlet-name>
+		<url-pattern>/doResiger</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PushTest</servlet-name>
+		<url-pattern>/PushTest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doJobTypeQuery</servlet-name>
+		<url-pattern>/doJobTypeQuery</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doJobQuery</servlet-name>
+		<url-pattern>/doJobQuery</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doMicroQuery</servlet-name>
+		<url-pattern>/doMicroQuery</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doActiveQuery</servlet-name>
+		<url-pattern>/doActiveQuery</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doMineMicroQuery</servlet-name>
+		<url-pattern>/doMineMicroQuery</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>doActiveAdd</servlet-name>
+		<url-pattern>/doActiveAdd</url-pattern>
+	</servlet-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<filter>
+		<filter-name>jspFilter</filter-name>
+		<filter-class>comt.action.UserFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>jspFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>jspFilter</filter-name>
+		<url-pattern>/back/index.html</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+</web-app>

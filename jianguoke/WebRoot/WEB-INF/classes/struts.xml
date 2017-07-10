@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 配置拦截器 -->
+	<package name="my-default" extends="struts-default">
+		<interceptors>
+			<!-- 配置未登录进行操作的拦截器 -->
+			<interceptor name="loginInterceptor" class="comt.action.LoginInterceptor">
+			</interceptor>
+			<!-- 重新封装一个默认的拦截器栈 -->
+			<interceptor-stack name="myDefaultStack">
+				<interceptor-ref name="loginInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<!-- 为这个包设置默认的拦截器栈 -->
+		<default-interceptor-ref name="myDefaultStack" />
+		<!-- 设置全局的返回值 -->
+		<global-results>
+			<result name="error" type="redirect">back/login.jsp</result>
+		</global-results>
+	</package>
+	<package name="helloWorld" namespace="/" extends="my-default">
+		<action name="adLogin" class="comt.action.adInfo" method="Login">
+			<result type="redirect">back/index.html</result>
+			<result name="error">back/login.jsp</result>
+		</action>
+		<action name="add" class="comt.action.adInfo" method="addinfo">
+			<result type="redirect">back/add.jsp</result>
+			<result name="error">back/login.jsp</result>
+		</action>
+		<action name="clear" class="comt.action.adInfo" method="clearinfo">
+			<result type="redirect">index.html</result>
+		</action>
+		<action name="markPage" class="comt.action.adInfo" method="markPage">
+		</action>
+	</package>
+<package name="xt" namespace="/" extends="my-default">
+
+<action name="orderInfo" class="comt.action.orderQuery" method="getorderInfo">
+</action>
+<action name="fuzzyQuery" class="comt.action.orderQuery" method="queryOrders"></action>
+
+<action name="orderInfoAll" class="comt.action.orderQuery" method="getorderInfoAll">
+</action>
+<action name="othersOrderInfo" class="comt.action.orderQuery" method="othersOrderInfo"></action>
+<action name="orderDetails" class="comt.action.orderQuery" method="orderDetails"></action>
+<action name="orderSalary" class="comt.action.orderQuery" method="salaryQuery"></action>
+</package>
+</struts>    
